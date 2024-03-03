@@ -1,0 +1,46 @@
+aside
+    color: white
+    text-shadow: 0 0 4px rgba(0, 0, 0, 1)
+
+    .introContainer
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        text-align: center
+        padding: 5%
+
+        h1
+            font-size: 220%
+
+
+        .card
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+
+            .photo
+                width: 40%
+                aspect-ratio: 1/1
+                border-radius: 50%
+                @include mixins.bg-img('photo.jpg')
+                background-size: 120%  
+
+        p
+            font-size: 130%
+
+footer
+
+    .icon
+        display: flex
+        justify-content: center
+        gap: 10%
+
+        a
+            i
+                font-size: 200%
+
+            &:hover
+                color: #ff8800

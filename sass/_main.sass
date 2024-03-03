@@ -1,0 +1,95 @@
+main
+    @import '_button.sass'
+    background: rgba(255, 255, 255, 0.1)
+    backdrop-filter: blur(3px)
+    padding: 5%
+    overflow-y: auto
+    border-left: 3px solid white 
+    color: white
+
+    h1
+        text-align: center
+        font-size: 300%
+        border-bottom: 3px solid white
+        text-transform: uppercase
+        text-shadow: 0 0 4px rgba(0, 0, 0, 1)
+
+    ul
+        width: 100%
+        margin-top: 5%
+        display: flex
+        flex-direction: column
+        gap: 2rem
+    
+        li
+            background: linear-gradient(to bottom, orange, #ff8800)
+            width: 100%
+            aspect-ratio: 3/1
+            border-radius: 15px
+            display: flex
+            padding: 2%
+            gap: 1rem
+
+            section
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+
+                span
+
+                    h2
+                        font-size: 200%
+                        border-bottom: 3px solid white
+                        text-transform: uppercase
+
+                    p
+                        font-size: 110%
+
+                .buttonContainer
+                    display: flex
+                    justify-content: space-around
+
+            .img
+                background-color: black
+                aspect-ratio: 16/9
+                border-radius: 5px
+
+#project-8
+    .img
+        @include mixins.bg-img('project-8.gif')
+
+#project-7
+    flex-direction: row-reverse
+    text-align: end
+    .img
+        @include mixins.bg-img('project-7.gif') 
+
+#project-6
+    .img
+        @include mixins.bg-img('project-6.gif')
+
+#project-5
+    flex-direction: row-reverse
+    text-align: end
+    .img
+        @include mixins.bg-img('project-5.gif') 
+
+#project-4
+    .img
+        @include mixins.bg-img('project-4.gif')
+
+#project-3
+    flex-direction: row-reverse
+    text-align: end
+    .img
+        @include mixins.bg-img('project-3.gif')   
+
+#project-2
+    .img
+        @include mixins.bg-img('project-2.gif')
+
+#project-1
+    flex-direction: row-reverse
+    text-align: end
+    .img
+        @include mixins.bg-img('project-1.gif')

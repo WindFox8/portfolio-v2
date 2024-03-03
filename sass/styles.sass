@@ -1,0 +1,23 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    list-style: none
+    background: none
+    border: none
+    color: inherit
+    text-decoration: none
+    font-family: variables.$font
+
+body
+    height: 100vh
+    display: grid
+    grid-template-columns: 33% 67%
+    @include mixins.bg-img('bg-2.jpg')
+    background-size: cover
+
+@import './aside.sass'
+@import './main.sass'
