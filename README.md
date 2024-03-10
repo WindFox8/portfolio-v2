@@ -1,4 +1,4 @@
-# Portfolio V2 - UNDER CONSTRUCTION
+# Portfolio V2
 
 Second version of my personal portfolio to demonstrate personal projects
 
