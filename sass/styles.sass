@@ -19,5 +19,13 @@ body
     @include mixins.bg-img('bg-3.jpg')
     background-size: cover
 
+    @include mixins.tablet
+        display: flex
+        flex-direction: column
+        background-attachment: fixed
+        align-items: center
+        overflow-x: hidden
+
+
 @import './aside.sass'
 @import './main.sass'

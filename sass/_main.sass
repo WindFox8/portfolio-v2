@@ -8,6 +8,12 @@ main
     color: variables.$color-3
     text-shadow: 0 0 4px rgba(0, 0, 0, 1)
 
+    @include mixins.tablet
+        overflow-y: visible
+        width: 95%
+        border: none
+        border-radius: 15px
+
     h1
         text-align: center
         font-size: 300%
@@ -30,29 +36,56 @@ main
             padding: 2%
             gap: 1rem
 
+            @include mixins.mobile
+                flex-direction: column
+                align-items: center
+                text-align: center
+
             section
                 display: flex
                 flex-direction: column
                 justify-content: space-around
+                width: 50%
+
+                @include mixins.mobile
+                    width: 100%
 
                 span
 
                     h2
-                        font-size: 200%
+                        font-size: 2vw
                         border-bottom: 3px solid variables.$color-3
                         text-transform: uppercase
 
+                        @include mixins.tablet
+                            font-size: 3vw
+
+                        @include mixins.mobile
+                            font-size: 6vw
+
                     p
-                        font-size: 110%
+                        font-size: 1.5vw
+                        @include mixins.tablet
+                            font-size: 2vw
+
+                        @include mixins.mobile
+                            font-size: 4vw
 
                 .buttonContainer
                     display: flex
                     justify-content: space-around
 
+                    @include mixins.mobile
+                        margin-top: 1rem
+
             .img
                 background-color: black
+                width: 50%
                 aspect-ratio: 16/9
                 border-radius: 5px
+
+                @include mixins.mobile
+                    width: 70%
 
 #project-8
     .img
@@ -61,8 +94,14 @@ main
 #project-7
     flex-direction: row-reverse
     text-align: end
+    @include mixins.mobile
+        flex-direction: column
+        align-items: center
+        text-align: center
+
     .img
         @include mixins.bg-img('project-7.png') 
+
 
 #project-6
     .img
@@ -71,6 +110,11 @@ main
 #project-5
     flex-direction: row-reverse
     text-align: end
+    @include mixins.mobile
+        flex-direction: column
+        align-items: center
+        text-align: center
+
     .img
         @include mixins.bg-img('project-5.png') 
 
@@ -81,6 +125,11 @@ main
 #project-3
     flex-direction: row-reverse
     text-align: end
+    @include mixins.mobile
+        flex-direction: column
+        align-items: center
+        text-align: center
+
     .img
         @include mixins.bg-img('project-3.png')   
 
@@ -91,5 +140,10 @@ main
 #project-1
     flex-direction: row-reverse
     text-align: end
+    @include mixins.mobile
+        flex-direction: column
+        align-items: center
+        text-align: center
+
     .img
         @include mixins.bg-img('project-1.png')

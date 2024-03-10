@@ -21,6 +21,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 1023px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    align-items: center;
+    overflow-x: hidden;
+  }
+}
 
 aside {
   color: #FFFFFF;
@@ -34,6 +43,11 @@ aside .introContainer {
   align-items: center;
   text-align: center;
   padding: 5%;
+}
+@media (max-width: 1023px) {
+  aside .introContainer {
+    width: 100vw;
+  }
 }
 aside .introContainer h1 {
   font-size: 220%;
@@ -98,6 +112,14 @@ main .button:hover a:after {
   opacity: 1;
   right: 0;
 }
+@media (max-width: 1023px) {
+  main {
+    overflow-y: visible;
+    width: 95%;
+    border: none;
+    border-radius: 15px;
+  }
+}
 main h1 {
   text-align: center;
   font-size: 300%;
@@ -119,27 +141,71 @@ main ul li {
   padding: 2%;
   gap: 1rem;
 }
+@media (max-width: 600px) {
+  main ul li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 main ul li section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 50%;
+}
+@media (max-width: 600px) {
+  main ul li section {
+    width: 100%;
+  }
 }
 main ul li section span h2 {
-  font-size: 200%;
+  font-size: 2vw;
   border-bottom: 3px solid #FFFFFF;
   text-transform: uppercase;
 }
+@media (max-width: 1023px) {
+  main ul li section span h2 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 600px) {
+  main ul li section span h2 {
+    font-size: 6vw;
+  }
+}
 main ul li section span p {
-  font-size: 110%;
+  font-size: 1.5vw;
+}
+@media (max-width: 1023px) {
+  main ul li section span p {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  main ul li section span p {
+    font-size: 4vw;
+  }
 }
 main ul li section .buttonContainer {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 600px) {
+  main ul li section .buttonContainer {
+    margin-top: 1rem;
+  }
+}
 main ul li .img {
   background-color: black;
+  width: 50%;
   aspect-ratio: 16/9;
   border-radius: 5px;
+}
+@media (max-width: 600px) {
+  main ul li .img {
+    width: 70%;
+  }
 }
 
 #project-8 .img {
@@ -152,6 +218,13 @@ main ul li .img {
 #project-7 {
   flex-direction: row-reverse;
   text-align: end;
+}
+@media (max-width: 600px) {
+  #project-7 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 #project-7 .img {
   background-image: url("../img/project-7.png");
@@ -171,6 +244,13 @@ main ul li .img {
   flex-direction: row-reverse;
   text-align: end;
 }
+@media (max-width: 600px) {
+  #project-5 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 #project-5 .img {
   background-image: url("../img/project-5.png");
   background-size: 100%;
@@ -189,6 +269,13 @@ main ul li .img {
   flex-direction: row-reverse;
   text-align: end;
 }
+@media (max-width: 600px) {
+  #project-3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 #project-3 .img {
   background-image: url("../img/project-3.png");
   background-size: 100%;
@@ -206,6 +293,13 @@ main ul li .img {
 #project-1 {
   flex-direction: row-reverse;
   text-align: end;
+}
+@media (max-width: 600px) {
+  #project-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 #project-1 .img {
   background-image: url("../img/project-1.png");
