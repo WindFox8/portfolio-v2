@@ -1,6 +1,6 @@
 # Portfolio V2
 
-Second version of my personal portfolio to demonstrate personal projects
+Second version of my personal portfolio to demonstrate projects and works.
 
 link: https://windfox8.github.io/portfolio-v2/
 
