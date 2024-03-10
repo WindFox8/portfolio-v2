@@ -15,7 +15,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 33% 67%;
-  background-image: url("../img/bg-2.jpg");
+  background-image: url("../img/bg-3.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,22 +38,6 @@ aside .introContainer {
 aside .introContainer h1 {
   font-size: 220%;
 }
-aside .introContainer .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-aside .introContainer .card .photo {
-  width: 40%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background-image: url("../img/photo.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 120%;
-}
 aside .introContainer p {
   font-size: 130%;
 }
@@ -67,7 +51,7 @@ footer .icon a i {
   font-size: 200%;
 }
 footer .icon a:hover {
-  color: #ff8800;
+  color: #67252b;
 }
 
 main {
@@ -77,13 +61,14 @@ main {
   overflow-y: auto;
   border-left: 3px solid #FFFFFF;
   color: #FFFFFF;
+  text-shadow: 0 0 4px rgb(0, 0, 0);
 }
 main .button {
   display: inline-block;
   border-radius: 4px;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
-  background-color: orange;
+  background-color: #67252b;
   text-align: center;
   font-size: 110%;
   padding: 2%;
@@ -118,7 +103,6 @@ main h1 {
   font-size: 300%;
   border-bottom: 3px solid #FFFFFF;
   text-transform: uppercase;
-  text-shadow: 0 0 4px rgb(0, 0, 0);
 }
 main ul {
   width: 100%;
@@ -128,7 +112,6 @@ main ul {
   gap: 2rem;
 }
 main ul li {
-  background: linear-gradient(to bottom, orange, #ff8800);
   width: 100%;
   aspect-ratio: 3/1;
   border-radius: 15px;
@@ -160,7 +143,7 @@ main ul li .img {
 }
 
 #project-8 .img {
-  background-image: url("../img/project-8.gif");
+  background-image: url("../img/project-8.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -171,14 +154,14 @@ main ul li .img {
   text-align: end;
 }
 #project-7 .img {
-  background-image: url("../img/project-7.gif");
+  background-image: url("../img/project-7.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #project-6 .img {
-  background-image: url("../img/project-6.gif");
+  background-image: url("../img/project-6.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,14 +172,14 @@ main ul li .img {
   text-align: end;
 }
 #project-5 .img {
-  background-image: url("../img/project-5.gif");
+  background-image: url("../img/project-5.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #project-4 .img {
-  background-image: url("../img/project-4.gif");
+  background-image: url("../img/project-4.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -207,14 +190,14 @@ main ul li .img {
   text-align: end;
 }
 #project-3 .img {
-  background-image: url("../img/project-3.gif");
+  background-image: url("../img/project-3.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #project-2 .img {
-  background-image: url("../img/project-2.gif");
+  background-image: url("../img/project-2.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,7 +208,7 @@ main ul li .img {
   text-align: end;
 }
 #project-1 .img {
-  background-image: url("../img/project-1.gif");
+  background-image: url("../img/project-1.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
